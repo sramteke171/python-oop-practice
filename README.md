@@ -14,7 +14,7 @@ Use these prompts to practice writing classes in JavaScript.
 1. Change into the new directory.
 1. Fulfill the listed requirements.
 
-Starter code is available in [`lib/challenge.js`](lib/challenge.js). You are not
+Starter code is available in [`lib/challenge.py`](lib/challenge.py). You are not
 required to turn in your submission for this exercise.
 
 ## Requirements
