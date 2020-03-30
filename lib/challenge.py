@@ -26,7 +26,19 @@
 #
 
 #
-# Prompt 2: You Do
+# Prompt 2: We Do
+#
+# We're going to modify our Car class from the previous prompt and extend it to
+# create a Toyota class:
+#
+#   - Extend your Car class to create a Toyota class. The make property will always
+#     be 'Toyota'. Add a drive method to your Toyota class.
+#
+# Make an instance of your Toyota class.
+#
+
+#
+# Prompt 3: You Do
 #
 # Define a class for your favorite animal (dog, cat, giraffe, etc). Give your
 # class 3 attributes and two methods.
@@ -34,19 +46,7 @@
 # After you've defined your class, create 3 instances.
 #
 
-#
-# Prompt 3: We Do
-#
-# We're going to modify our Car class from the previous prompt and extend it to
-# create a Toyota class:
-#
-#   - Make a Car class with make, model, and color properties.
-#   - Extend your Car class to create a Toyota class. The make property will always
-#     be 'Toyota'. Add a drive method to your Toyota class.
-#
-# Make an instance of your Toyota class.
-#
-# You Do:
+# Prompt 4: You Do
 #
 # Once we've completed the above, work through the following changes to your
 # Car and Toyota classes:
@@ -58,7 +58,7 @@
 #
 
 #
-# Prompt 4: You Do
+# Prompt 5: You Do
 #
 # Define and Animal class with the following properties and methods:
 #
@@ -74,7 +74,7 @@
 #
 
 #
-# Prompt 5: You Do
+# Prompt 6: You Do
 #
 # Define a Card class with the following properties:
 #
