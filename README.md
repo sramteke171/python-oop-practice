@@ -2,7 +2,7 @@
 
 # Python OOP Practice
 
-Use these prompts to practice writing classes in JavaScript.
+Use these prompts to practice writing classes in Python.
 
 ## Prerequisites
 
