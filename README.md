@@ -6,7 +6,7 @@ Use these prompts to practice writing classes in JavaScript.
 
 ## Prerequisites
 
-* JavaScript objects
+* Python objects
 
 ## Instructions
 
