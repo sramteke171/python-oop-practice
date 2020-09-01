@@ -7,6 +7,8 @@
 # Tip: comment out your solution to each prompt before moving on to the next
 # one! This will keep your console clear.
 #
+# from cffi import model
+
 
 #
 # Prompt 1: We Do
@@ -24,6 +26,25 @@
 #
 # Once you create your class definition create two instances.
 #
+class car:
+    
+    def __init__(self, color, model, make):
+        self.color = color
+        self.model = model
+        self.make = make
+    
+    def __str__(self):
+        return f"This is a {self.color} {self.make} {self.model}"
+
+    def drive(self):
+        print(f"{self.model} goes Vroom Vroom")
+
+        
+instance1 = car("Ford", "Fusion", "White")
+print(instance1)
+
+instance2 = car("GMC", "Acadia", "silver")
+print(instance2)
 
 #
 # Prompt 2: We Do
@@ -37,6 +58,23 @@
 # Make an instance of your Toyota class.
 #
 
+
+class Toyota(car):
+    
+    def __init__(self, color, model, make="toyota"):
+        super().__init__(color, model, make)
+    
+    def drive(self):
+        print("Toyota Rules")    
+
+            
+camry = Toyota("Blue", "Camry")
+print(camry)
+
+bmw = Toyota("Silver", "BMW")
+print(bmw)
+
+bmw.drive()
 #
 # Prompt 3: You Do
 #
@@ -45,6 +83,45 @@
 #
 # After you've defined your class, create 3 instances.
 #
+
+# class dog:
+
+#     def __init__(self, color, type, size):
+#         self.color = color
+#         self.type = type
+#         self.size = size
+
+#     def __str__(self):
+#         return f"your dog's details are:- {self.color} {self.type} {self.size}"
+
+#     def hobby(self):
+#         print(f"{self.type} are hard to train (level 3/10)")
+        
+# louie = dog("black", "docshand", "small-size")
+# print(louie)
+
+# reggie = dog("golden", "golden-retriever", "big-size")
+# print(reggie)
+
+# lab = dog("white", "Labrador", "big-size")
+# print(lab)
+
+# class Toyota(car):
+    
+#     def __init__(self, color, model, make="toyota"):
+#         super().__init__(color, model, make)
+    
+#     def drive(self):
+#         print("Toyota Rules")    
+            
+# camry = Toyota("Blue", "Camry")
+# print(camry)
+
+# bmw = Toyota("Silver", "BMW")
+# print(bmw)
+
+# bmw.drive()
+
 
 # Prompt 4: You Do
 #
@@ -56,6 +133,25 @@
 #   - add a property to your Toyota class
 #   - add a property to your Car class and "fill it in" for your Toyota class
 #
+class car:
+    
+    def __init__(self, color, model, make):
+        self.color = color
+        self.model = model
+        self.make = make
+    
+    def __str__(self):
+        return f"This is a {self.color} {self.make} {self.model}"
+
+    def drive(self):
+        print(f"{self.model} goes Vroom Vroom")
+
+        
+instance1 = car("Ford", "Fusion", "White")
+print(instance1)
+
+instance2 = car("GMC", "Acadia", "silver")
+print(instance2)
 
 #
 # Prompt 5: You Do
