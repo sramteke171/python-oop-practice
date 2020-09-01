@@ -81,18 +81,19 @@
 # After you've defined your class, create 3 instances.
 #
 
-# class dog:
 
-#     def __init__(self, color, type, size):
-#         self.color = color
-#         self.type = type
-#         self.size = size
+class dog:
 
-#     def __str__(self):
-#         return f"your dog's details are:- {self.color} {self.type} {self.size}"
+    def __init__(self, color, type, size):
+        self.color = color
+        self.type = type
+        self.size = size
 
-#     def hobby(self):
-#         print(f"{self.type} are hard to train (level 3/10)")
+    def __str__(self):
+        return f"your dog's details are:- {self.color} {self.type} {self.size}"
+
+    def hobby(self):
+        print(f"{self.type} are hard to train (level 3/10)")
         
 # louie = dog("black", "docshand", "small-size")
 # print(louie)
@@ -153,7 +154,7 @@ class Toyota(car):
         super().__init__(model, make)
         self.color = color
         self.year = year
-    
+          
     def drive(self):
         print(f"{self.model} has {self.color} color and goes Vroom Vroom")
 
@@ -165,6 +166,8 @@ bmw = Toyota("Silver", "lexus", "2019")
 print(bmw)
 
 bmw.drive()
+
+
 #
 # Prompt 5: You Do
 #
@@ -180,6 +183,33 @@ bmw.drive()
 # Create an instance of your animal class (the one that extends the Animal
 # class).
 #
+class animal(dog):
+
+    def __init__(self, color, type, size, group):
+        super().__init__(color, type, size)
+        self.group = group
+    
+    def __str__(self):
+            return f"your dog's details are:- {self.color} {self.type} {self.size} {self.group}"
+        
+    def eat(self):
+        print("yum yum")
+    
+    def sleep(self):
+        print("zzzzz")
+
+        
+louie = animal("black", "docshand", "small-size", "Invertebrates")
+print(louie)
+
+reggie = animal("golden", "golden-retriever", "big-size", "Invertebrates")
+print(reggie)
+
+lab = animal("white", "Labrador", "big-size", "Invertebrates")
+print(lab)
+
+louie.eat()
+louie.sleep()
 
 #
 # Prompt 6: You Do
