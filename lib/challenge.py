@@ -9,7 +9,6 @@
 #
 # from cffi import model
 
-
 #
 # Prompt 1: We Do
 #
@@ -26,55 +25,53 @@
 #
 # Once you create your class definition create two instances.
 #
-class car:
+# class car:
     
-    def __init__(self, color, model, make):
-        self.color = color
-        self.model = model
-        self.make = make
+#     def __init__(self, color, model, make):
+#         self.color = color
+#         self.model = model
+#         self.make = make
     
-    def __str__(self):
-        return f"This is a {self.color} {self.make} {self.model}"
+#     def __str__(self):
+#         return f"This is a {self.color} {self.make} {self.model}"
 
-    def drive(self):
-        print(f"{self.model} goes Vroom Vroom")
-
+#     def drive(self):
+#         print(f"{self.model} goes Vroom Vroom")
         
-instance1 = car("Ford", "Fusion", "White")
-print(instance1)
+# instance1 = car("Ford", "Fusion", "White")
+# print(instance1)
 
-instance2 = car("GMC", "Acadia", "silver")
-print(instance2)
+# instance2 = car("GMC", "Acadia", "silver")
+# print(instance2)
 
-#
-# Prompt 2: We Do
-#
-# We're going to modify our Car class from the previous prompt and extend it to
-# create a Toyota class:
-#
-#   - Extend your Car class to create a Toyota class. The make property will always
-#     be 'Toyota'. Add a drive method to your Toyota class.
-#
-# Make an instance of your Toyota class.
-#
+# #
+# # Prompt 2: We Do
+# #
+# # We're going to modify our Car class from the previous prompt and extend it to
+# # create a Toyota class:
+# #
+# #   - Extend your Car class to create a Toyota class. The make property will always
+# #     be 'Toyota'. Add a drive method to your Toyota class.
+# #
+# # Make an instance of your Toyota class.
+# #
 
-
-class Toyota(car):
+# class Toyota(car):
     
-    def __init__(self, color, model, make="toyota"):
-        super().__init__(color, model, make)
+#     def __init__(self, color, model, make="toyota"):
+#         super().__init__(color, model, make)
     
-    def drive(self):
-        print("Toyota Rules")    
-
+#     def drive(self):
+#         print("Toyota Rules")    
             
-camry = Toyota("Blue", "Camry")
-print(camry)
+# camry = Toyota("Blue", "Camry")
+# print(camry)
 
-bmw = Toyota("Silver", "BMW")
-print(bmw)
+# bmw = Toyota("Silver", "BMW")
+# print(bmw)
 
-bmw.drive()
+# bmw.drive()
+
 #
 # Prompt 3: You Do
 #
@@ -135,24 +132,39 @@ bmw.drive()
 #
 class car:
     
-    def __init__(self, color, model, make):
-        self.color = color
+    def __init__(self, model, make):
         self.model = model
         self.make = make
     
     def __str__(self):
-        return f"This is a {self.color} {self.make} {self.model}"
-
-    def drive(self):
-        print(f"{self.model} goes Vroom Vroom")
-
+        return f"This is a {self.make} {self.model}"
         
-instance1 = car("Ford", "Fusion", "White")
+        
+instance1 = car("Ford", "Fusion")
 print(instance1)
 
-instance2 = car("GMC", "Acadia", "silver")
+instance2 = car("GMC", "Acadia")
 print(instance2)
 
+
+class Toyota(car):
+    
+    def __init__(self, color, model, make="toyota", year="2020"):
+        super().__init__(model, make)
+        self.color = color
+        self.year = year
+    
+    def drive(self):
+        print(f"{self.model} has {self.color} color and goes Vroom Vroom")
+
+            
+camry = Toyota("Blue", "Camry", "2020")
+print(camry)
+
+bmw = Toyota("Silver", "lexus", "2019")
+print(bmw)
+
+bmw.drive()
 #
 # Prompt 5: You Do
 #
