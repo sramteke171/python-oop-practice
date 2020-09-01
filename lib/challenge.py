@@ -235,3 +235,40 @@ louie.sleep()
 #
 # Instantiate an instance of your Deck and start drawing random cards!
 #
+
+import random
+
+
+class Card:
+
+    def __init__(self, suit, rank, score):
+        self.suit = suit
+        self.rank = rank
+        self.score = score
+        
+    
+class Deck:
+    
+    def __init__(self, length, cards):
+        # super().__init__(suit, rank, score, length, cards)
+        self.length = length
+        self.cards = cards
+        
+    def build(self):
+        for suit in ["Spades", "Clubs", "Diamonds", "Hearts"]:
+            # for score in range(1, 14):
+                for rank in ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]:
+                    # self.cards.append(Card(suit, score, rank))
+                    self.cards.append(Card(suit, rank, score=""))
+                    print(len(self.cards))
+
+                    # return self.cards
+    def draw(self):
+        drawn_card = random.choice(self.cards)
+        print(f"{drawn_card.rank} of {drawn_card.suit}")
+
+                
+deck = Deck(52, [])
+deck.build()
+deck.draw()
+
